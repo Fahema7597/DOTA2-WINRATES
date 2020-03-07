@@ -1,0 +1,44 @@
+@import url("//unpkg.com/element-ui@2.13.0/lib/theme-chalk/index.css");
+
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+    background: rgba(14, 22, 54);  
+  }
+  
+  #app {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    flex-direction: column;
+    padding: 8rem 8rem;
+    border: 0; 
+  } 
+ .el-table {
+    box-shadow: 0px 0px 20px 20px rgba(30, 60, 92,12);
+    margin: 0 auto;
+    width: 90%;
+    border-spacing: 10px;
+ }
+ #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+}
+h1#title {
+  color: rgba(166, 131, 18); 
+  float: left;
+}
+img#dota2Icon {
+ padding-left: 10px
+}
+@media only screen and (max-width: 632px) {
+  #app {
+    padding: 5px;
+  }
+}
