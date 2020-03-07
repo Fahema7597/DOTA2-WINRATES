@@ -2,7 +2,7 @@
 
 Frontend for the dota2 dataset using [vue.js](https://vuejs.org/).
 
-## Link to the website
+## Link to the page
 
 [DOTA2-HEROES-WINRATE](https://dota2-heroes-winrate.herokuapp.com/)
 
