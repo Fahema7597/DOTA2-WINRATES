@@ -33,6 +33,7 @@ npm run serve
 ```bash
 npm run build
 ```
+Hurrah! Good to go ..
 
 
 
