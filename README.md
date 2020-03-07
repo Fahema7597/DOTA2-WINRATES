@@ -10,7 +10,7 @@ You will need [node.js](https://nodejs.org/en/) 6.0 or greater installed on your
 Get the code by either cloning this repository using git
 
 ``` bash
-git clone 
+git clone https://github.com/Fahema7597/DOTA2-WINRATES.git
 ```
 ... or downloading source code code as a zip archive.
 
