@@ -4,7 +4,7 @@ Frontend for the dota2 dataset using [vue.js](https://vuejs.org/).
 
 ## Prerequisites
 
-You will need [node.js](https://nodejs.org/en/) 6.0 or greater installed on your system.
+You will need [node.js](https://nodejs.org/en/) 6.0 or greater installed on your system and any code editor(Visual studio code). 
 
 ## Setup
 Get the code by either cloning this repository using git
