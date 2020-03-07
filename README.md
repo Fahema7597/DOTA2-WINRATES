@@ -2,6 +2,12 @@
 
 Frontend for the dota2 dataset using [vue.js](https://vuejs.org/).
 
+## Link to the website
+
+[DOTA2-HEROES-WINRATE](https://dota2-heroes-winrate.herokuapp.com/)
+
+Heroku cloud to deploy the vue.js project.
+
 ## Prerequisites
 
 You will need [node.js](https://nodejs.org/en/) 6.0 or greater installed on your system and any code editor(Visual studio code). 
