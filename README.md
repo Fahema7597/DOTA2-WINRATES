@@ -34,7 +34,6 @@ Once downloaded, open the terminal in the project directory, and continue with:
 ``` bash
 npm install
 ```
-If it prompts to install any other commands, install and continue thr prompted command.
 
 ## Compiles and hot-reloads for development
 ```bash
