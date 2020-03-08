@@ -23,6 +23,8 @@ You will need Node Package manager(npm) for publishing the project and any code 
 3) On the results list look for npm 'npm commands for VS Code'. This npm manages commands. Click Install, then Reload VS Code    to save changes.
 4) Restart VS Code.
 
+Get the code by either cloning this repository using git
+
 ``` bash
 git clone https://github.com/Fahema7597/DOTA2-WINRATES.git
 ```
