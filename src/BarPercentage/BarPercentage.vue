@@ -61,9 +61,6 @@ computed: {
 
 new Vue({
   el: '.lineChart',
-  data: {
-    message: 'Hello World'
-  }
 })
 </script>
 
