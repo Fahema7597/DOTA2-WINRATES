@@ -9,7 +9,7 @@ export default new Vuex.Store(
         //state
         state:{
            title: "DOTA2 TOP 10 WIN RATES",
-           herostats: [],
+           herostats: window.localStorage.getItem('heroStats'),
            winrate: 0,
            loading: true,
         },
@@ -26,6 +26,7 @@ export default new Vuex.Store(
               })
             },
           },
+
           //mutations
           mutations: {
             //Calculates winrate % and Stores the Hero stats
@@ -37,14 +38,15 @@ export default new Vuex.Store(
                  herostats[i].pro_win = (state.winrate.toFixed(2));
                  state.winrate = 0
                   }
-                    state.herostats = herostats
-                }
-            },
+                  state.herostats = herostats
+                  window.localStorage.setItem('heroStats', herostats);
+                 }                   
+                },
             //loading stops after fetching data from API (set = false)
             changeLoadingState(state, loading) {
                 state.loading = loading
               },
-          }
+          },
     }
 )
 
