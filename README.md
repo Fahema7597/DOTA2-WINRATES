@@ -18,7 +18,7 @@ You will need Node Package manager(npm) for publishing the project and any code 
 
 ### npm installation
 
-1) Click Ctrl+P.
+1) Click Ctrl+P in VS code.
 2) Write ext install npm script runner.
 3) On the results list look for npm 'npm commands for VS Code'. This npm manages commands. Click Install, then Reload VS Code    to save changes.
 4) Restart VS Code.
