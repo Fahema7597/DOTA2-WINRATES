@@ -72,12 +72,13 @@ data()
         return percentage === 100 ? 'Full' : `${percentage}%`;
       }
     },
-  //Dispatch the loadData - (API call)
-mounted()
+
+//Dispatch the loadData - (API call)
+ mounted()
     {
       this.$store.dispatch('loadData')
     },
-computed: {
+ computed: {
    //vuex mapState
     ...mapState([
      'title'
@@ -104,7 +105,7 @@ computed: {
             return this.$store.state.herostats
    },
   //Filter top 10 heroes
-  filteredheroes: function () {
+   filteredheroes: function () {
      return this.sortheroes.slice(0,10)
      },
 },

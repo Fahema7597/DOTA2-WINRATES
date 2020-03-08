@@ -1,5 +1,5 @@
 <template>
-<div if="linChart">
+<div if="lineChart">
 	<line-chart
   :labels="labels"
   :datasets="datasets"></line-chart>
