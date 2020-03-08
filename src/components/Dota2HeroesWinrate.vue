@@ -53,7 +53,6 @@ import '../../style/style.css'
 import '../../style/theme/index.css'
 import {mapState} from 'vuex'
 import visualization from '.././BarPercentage/BarPercentage'
-import Vue from 'vue'
 
 export default {
 name: 'Dota2HeroesWinRate',
@@ -67,46 +66,29 @@ data()
       search: '',
       isHidden: false
   }},
+
  methods: {
       format(percentage) {
         return percentage === 100 ? 'Full' : `${percentage}%`;
-      }
+      },
     },
 
-//Dispatch the loadData - (API call)
- mounted()
+  //Dispatch the loadData - (API call)
+mounted()
     {
       this.$store.dispatch('loadData')
     },
- computed: {
+
+computed: {
+  
    //vuex mapState
     ...mapState([
      'title'
    ]),
-   //Sort heroes based on highest win rate
-   sortheroes: function()
-   {    
-           let issorted = false;
-            let temp = 0;
-            while(!issorted)
-            {
-              issorted = true;
-              for(let i=0; i<this.$store.state.herostats.length - 1; i++)
-              {
-                    if(this.$store.state.herostats[i+1].pro_win > this.$store.state.herostats[i].pro_win)
-                    {
-                     temp = this.$store.state.herostats[i];
-                     Vue.set(this.$store.state.herostats, i, this.$store.state.herostats[i + 1]);
-                     Vue.set(this.$store.state.herostats, i + 1, temp);
-                     issorted = false
-                    }
-                  }
-            }
-            return this.$store.state.herostats
-   },
+
   //Filter top 10 heroes
-   filteredheroes: function () {
-     return this.sortheroes.slice(0,10)
+  filteredheroes: function () { 
+     return this.$store.state.herostats.slice(0,10)
      },
 },
 }

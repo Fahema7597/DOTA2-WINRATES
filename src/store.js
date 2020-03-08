@@ -13,6 +13,7 @@ export default new Vuex.Store(
            winrate: 0,
            loading: true,
         },
+
         //actions
         actions: {
             //loads the API data and commits 
@@ -24,12 +25,13 @@ export default new Vuex.Store(
                 commit('updateHeroStats', response.data)
                 commit('changeLoadingState', false)
               })
-            },
+            }
           },
 
           //mutations
           mutations: {
-            //Calculates winrate % and Stores the Hero stats
+
+            //Calculates winrate %, sort and Stores the Hero stats
             updateHeroStats(state, herostats) {
                 {        
                    for(let i = 0; i < herostats.length; i++)
@@ -38,10 +40,27 @@ export default new Vuex.Store(
                  herostats[i].pro_win = (state.winrate.toFixed(2));
                  state.winrate = 0
                   }
+                  let issorted = false;
+                  let temp = 0;
+                  while(!issorted)
+                  {
+                    issorted = true;
+                    for(let i=0; i<herostats.length - 1; i++)
+                    {
+                          if(herostats[i+1].pro_win > herostats[i].pro_win)
+                          {
+                           temp = herostats[i];
+                           Vue.set(herostats, i, herostats[i + 1]);
+                           Vue.set(herostats, i + 1, temp);
+                           issorted = false
+                          }
+                        }
+                  }
                   state.herostats = herostats
                   window.localStorage.setItem('heroStats', herostats);
                  }                   
                 },
+                
             //loading stops after fetching data from API (set = false)
             changeLoadingState(state, loading) {
                 state.loading = loading
