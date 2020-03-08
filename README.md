@@ -10,10 +10,16 @@ Heroku cloud to deploy the vue.js project.
 
 ## Prerequisites
 
-You will need [node.js](https://nodejs.org/en/) 6.0 or greater installed on your system and any code editor(Visual studio code). 
+You will need Node Package manager(npm) for publishing the project and any code editor([Visual studio code](https://code.visualstudio.com/download)). 
 
 ## Setup
-Get the code by either cloning this repository using git
+
+### npm installation
+
+1) Click Ctrl+P.
+2) Write ext install npm script runner.
+3) On the results list look for npm 'npm commands for VS Code'. This npm manages commands. Click Install, then Reload VS Code    to save changes.
+4) Restart VS Code.
 
 ``` bash
 git clone https://github.com/Fahema7597/DOTA2-WINRATES.git
